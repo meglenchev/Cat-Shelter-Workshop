@@ -12,7 +12,7 @@ SoftUni JS Back End Course And Projects
  - [x] Read home html from file system
  - [x] Read site css from file system
  - [x] Add create bread page
- - [] Add create cat page
+ - [x] Add create cat page
  - [] Render view generic function
  - [] Render dynamic cats on home page
  - [] Add cats from add-cats page
