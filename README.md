@@ -7,11 +7,10 @@ SoftUni JS Back End Course And Projects
  - [x] Debugging
  - [x] Add basic http server
  - [x] Add resources
- - [] Show home page
- - [] Add css
- - [] Extract css into separate js files
- - [] Read home html from file system
- - [] Read site css from file system
+ - [x] Add css
+ - [x] Extract css into separate js files
+ - [x] Read home html from file system
+ - [x] Read site css from file system
  - [] Add create bread page
  - [] Add create cat page
  - [] Render view generic function
