@@ -1,13 +1,7 @@
 import http from 'http';
 import fs from 'fs/promises';
-
-async function homeView() {
-    return await fs.readFile('./src/views/index.html', {encoding: 'utf-8'})
-}
-
-async function getStyles() {
-    return await fs.readFile('./src/styles/site.css');
-}
+import { homeView } from './data/getViews.js';
+import { getStyles } from './data/getCss.js';
 
 const server = http.createServer( async (req, res) => {
     if (req.url === '/') {
