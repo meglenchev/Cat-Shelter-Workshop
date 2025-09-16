@@ -1,6 +1,6 @@
 import http from 'http';
 import fs from 'fs/promises';
-import { homeView } from './data/getViews.js';
+import { homeView, getAddBreed } from './data/getViews.js';
 import { getStyles } from './data/getCss.js';
 
 const server = http.createServer( async (req, res) => {
@@ -12,6 +12,14 @@ const server = http.createServer( async (req, res) => {
         });
 
         res.write(homePage);
+    } else if (req.url === '/cats/add-breed') {
+        const addBread = await getAddBreed();
+
+        res.writeHead(200, {
+            'content-type': 'text/html'
+        })
+
+        res.write(addBread);
     } else if (req.url === '/styles/site.css') {
         const siteCss = await getStyles();
 
